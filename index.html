@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="color-box">
+      <h1>Convert Hex to RGB or RGB to Hex</h1>
+      <form id="color-form">
+        <label for="rgb">INPUT:</label>
+        <input
+          type="text"
+          id="input"
+          placeholder="Enter color in RGB (Eg. 24, 157, 213) or in HEX (Eg. A0742F)"
+        />
+        <br /><br />
+        <button type="button" id="btn" onclick="convertColor()">submit</button>
+        <br /><br />
+        <div id="result">
+          <label for="HEX">OUTPUT:</label>
+          <input
+            type="text"
+            id="result-of-color"
+            placeholder="Output"
+            onoutput="copyToClipboard()"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
